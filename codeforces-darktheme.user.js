@@ -76,6 +76,12 @@ div.logo-plus-button {
 		}
 	);
 
+	    (function fixLogo() {
+		applyFuncWhenElmLoaded("#header > div:nth-child(1) > a > img", function (elm) {
+			 elm.src="https://i.imgur.com/doFyGfG.png";
+		});
+	 })();
+
 	applyFuncWhenElmLoaded(".datatable div:nth-child(5)", function (elm) {
 		elm.classList.add("dark");
 	});
