@@ -3,6 +3,7 @@
 // @version      1.1.1
 // @description  dark theme for codeforces
 // @author       Gaurang Tandon
+// @update       Ahmed Mohammed Wahba
 // @match        https://codeforces.com/*
 // @match        http://codeforces.com/*
 // @match        https://calendar.google.com/calendar/embed*
