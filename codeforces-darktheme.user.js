@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Codeforces dark theme
-// @version      1.1.1
+// @name         Codeforces Dark Theme
+// @version      1.1.2
 // @description  dark theme for codeforces
 // @author       Gaurang Tandon
-// @update       Ahmed Mohammed Wahba
+// @editor       Ahmed Mohammed Wahba
 // @match        https://codeforces.com/*
 // @match        http://codeforces.com/*
 // @match        https://calendar.google.com/calendar/embed*
@@ -76,12 +76,6 @@ div.logo-plus-button {
 			obs.observe(elm, { attributes: true });
 		}
 	);
-
-	    (function fixLogo() {
-		applyFuncWhenElmLoaded("#header > div:nth-child(1) > a > img", function (elm) {
-			 elm.src="https://i.imgur.com/doFyGfG.png";
-		});
-	 })();
 
 	applyFuncWhenElmLoaded(".datatable div:nth-child(5)", function (elm) {
 		elm.classList.add("dark");
@@ -183,6 +177,11 @@ div.logo-plus-button {
 			}
 		};
 	}
+ (function fixLogo() {
+		applyFuncWhenElmLoaded("#header > div:nth-child(1) > a > img", function (elm) {
+			 elm.src="https://i.imgur.com/pMgV0vx.png";
+		});
+	 })();
 
 	// The style is applied to multiple matching test-lines, hence cannot override
 	// via CSS because there is no regex-based selector.
